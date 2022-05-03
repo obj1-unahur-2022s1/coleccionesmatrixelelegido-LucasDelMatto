@@ -13,12 +13,10 @@ object neo{
 
 object morfeo {
 	const esElegido = false
-	var vitalidad = 8
+	var property vitalidad = 8
 	var cansado = false
 	
 	method esElegido() = esElegido
-	
-	method vitalidad() = vitalidad
 	
 	method saltar(){
 		cansado = not cansado
@@ -29,11 +27,9 @@ object morfeo {
 
 object trinity {
 	const esElegido = false
-	const vitalidad = 0
+	const property vitalidad = 0
 	
 	method esElegido() = esElegido
-	
-	method vitalidad() = vitalidad
 	
 	method saltar(){}
 }

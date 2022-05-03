@@ -1,22 +1,18 @@
 object neo{
-	const esElegido = true
 	var energia = 100
 	
-	method esElegido() = esElegido
+	method esElegido() = true
 	
-	method vitalidad() = 100*0.1
+	method vitalidad() = energia * 0.1
 	
-	method saltar(){
-		energia = energia/2
-	}
+	method saltar() {energia = energia/2}
 }
 
 object morfeo {
-	const esElegido = false
 	var property vitalidad = 8
 	var cansado = false
 	
-	method esElegido() = esElegido
+	method esElegido() = false
 	
 	method saltar(){
 		cansado = not cansado
@@ -26,10 +22,9 @@ object morfeo {
 }
 
 object trinity {
-	const esElegido = false
 	const property vitalidad = 0
 	
-	method esElegido() = esElegido
+	method esElegido() = false
 	
 	method saltar(){}
 }

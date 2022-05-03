@@ -1,0 +1,12 @@
+import matrix.*
+
+describe "Test de Neo"{
+	test "Neo es el Elegido"{
+		assert.that(neo.esElegido())
+	}
+	test "Neo salta"{
+		neo.saltar()
+		assert.equals(5,neo.vitalidad())
+	}
+}
+
